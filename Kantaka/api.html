@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>かんたか の H4des</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            color: #ffffff;
+            margin-right: 20px;
+        }
+
+        .info {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            {{ writerJapaneseVariation }}
+        </div>
+        <div class="info">
+            <p>writing: {{ writerJapaneseVariation }}</p>
+            <p>pronunciation (Romanji): {{ pronunciation }}</p>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+

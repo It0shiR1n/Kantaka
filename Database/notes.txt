@@ -1,0 +1,37 @@
+Banco de dados:
+    DB: db_hieroglifos
+        tb_hiragana
+            id_hiragana
+            pronunciation
+            ideogram
+        tb_katakana
+            id_katakana
+            pronunciation
+            ideogram
+        tb_kanji 
+            id_kanji 
+            pronunciation
+            write
+            ideogram
+
+
+CREATE TABLE tb_hiragana (
+  id_hiragana INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  pronunciation VARCHAR(3),
+  ideogram VARCHAR(9)
+
+);
+
+CREATE TABLE tb_katakana (
+  id_katakana INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  pronunciation VARCHAR(3),
+  ideogram VARCHAR(9)
+);
+
+
+CREATE TABLE tb_kanji (
+  id_kanji INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  pronunciation VARCHAR(100),
+  hiragana VARCHAR(100),
+  ideogram VARCHAR(100)
+);
