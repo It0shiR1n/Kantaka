@@ -8,11 +8,6 @@ Banco de dados:
             id_katakana
             pronunciation
             ideogram
-        tb_kanji 
-            id_kanji 
-            pronunciation
-            write
-            ideogram
 
 
 CREATE TABLE tb_hiragana (
@@ -29,9 +24,3 @@ CREATE TABLE tb_katakana (
 );
 
 
-CREATE TABLE tb_kanji (
-  id_kanji INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  pronunciation VARCHAR(100),
-  hiragana VARCHAR(100),
-  ideogram VARCHAR(100)
-);
